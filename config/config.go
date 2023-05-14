@@ -63,6 +63,7 @@ func NewConfig() (*Config, error) {
 	// Environment Variables
 	viper.SetEnvPrefix(envPrefix)
 	viper.BindEnv("Host")
+	viper.BindEnv("Port")
 	viper.BindEnv("User")
 	viper.BindEnv("Password")
 
